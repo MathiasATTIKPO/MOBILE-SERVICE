@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facture Créée</title>
+</head>
+<body>
+  <h1>Votre Facture a été Créée avec Succès</h1>
+  <p>Voici les informations de votre facture :</p>
+  <p><strong>Token de la Facture :</strong> <%= invoiceData.token %></p>
+  <p><strong>Montant :</strong> <%= invoiceData.amount %> XOF</p>
+  <p><strong>Description :</strong> <%= invoiceData.description %></p>
+  <p><strong>Nom du Client :</strong> <%= invoiceData.customer_name %></p>
+  <p>Utilisez ce token pour initier le paiement avec le lien fourni dans l'API.</p>
+</body>
+</html>
