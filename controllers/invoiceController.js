@@ -1,11 +1,11 @@
-const invoiceService = require('../services/invoiceService');
+const paydunyaService = require('../services/paydunyaService');
 
 exports.createInvoice = async (req, res) => {
   try {
     const { amount, customer_name, customer_email, phone_number } = req.body;
 
     // Appel à la fonction pour créer la facture
-    const invoiceData = await invoiceService.createInvoice(amount, customer_name, customer_email, phone_number);
+    const paydunyaService = await paydunyaService.createInvoice(amount, customer_name, customer_email, phone_number);
     
     // Si la facture est créée avec succès, retourne le token et les détails
     res.json({
